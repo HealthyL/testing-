@@ -1,4 +1,4 @@
-Feature: Mostrar sección heroica
+Feature: 	Mostrar hero section
  
   Escenario: Mostrar elementos atractivos y minimalistas
     Given que estoy en la página de inicio
