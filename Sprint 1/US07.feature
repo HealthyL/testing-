@@ -1,4 +1,4 @@
-Feature: Mostrar sección de "Contáctanos".
+Feature: Mostrar sección de "Contáctanos"
 
   Scenario: Mostrar formulario de contactanos
     Given que estoy en el apartado de Contacto
