@@ -1,4 +1,4 @@
-Feature: Mostrar barra de navegación
+Feature: Mostrar barra de navegación.
 
   Scenario: Insertar logo
     Given que estoy en cualquier página del sitio web
