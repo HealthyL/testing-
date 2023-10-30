@@ -1,4 +1,4 @@
-Feature: Publicar servicios de la empresa turística
+Feature: Publicar servicios de la empresa turística.
 
   Scenario: Ingreso al panel de administración
     Given que me authentico como administrador de la empresa
