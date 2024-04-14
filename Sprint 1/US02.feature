@@ -1,9 +1,16 @@
-Feature: Mostrar hero section.
- 
-  Scenario: Mostrar elementos atractivos y minimalistas
-    Given que estoy en la página de inicio
-    Then debería ver una imagen referencial, logo y descripción concisa.
+Feature: Sección Contáctanos
 
-  Scenario: Mostrar Call to action
-    Given que estoy en la página de inicio
-    Then debería ver un botón con el texto "ver más" que redirige a nuestra aplicación web.
+  Scenario: Interacción con el hipervínculo "Contáctanos"
+    Given que soy un visitante en la landing page
+    When hago click en el hipervínculo "Contáctanos"
+    Then debería ser dirigido a la sección de contacto.
+
+  Scenario: Ingresar datos
+    Given que soy un visitante en la landing page
+    When hago click en las barras de texto
+    Then debería poder ingresar texto.
+
+  Scenario: Enviar datos
+    Given que soy un visitante en la landing page
+    When hago click en el botón "submit"
+    Then los textos ingresados deberían ser enviados.
