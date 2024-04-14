@@ -1,5 +1,6 @@
-Feature: Mostrar sección de reseñas de usuario.
+Feature: Crear cuenta
 
-  Scenario: Mostrar reseñas de nuestros usuarios
-    Given que estoy en el apartado de Testimonio
-    Then debería ver tarjetas donde se visualice la foto, nombre y reseña del usuario.
+  Scenario: Redirigir al visitante al apartado de creación de cuenta
+    Given que soy un visitante en la landing page y quiero registrarme en FitHub
+    When hago click al botón de "create account"
+    Then debería ser enviado a la pestaña de creación de cuentas.
