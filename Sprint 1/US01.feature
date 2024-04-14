@@ -1,13 +1,6 @@
-Feature: Mostrar barra de navegación.
+Feature: Interacción con la landing page
 
-  Scenario: Insertar logo
-    Given que estoy en cualquier página del sitio web
-    Then debería ver el logo de nuestro proyecto.
-
-  Scenario: Mostrar secciones de la landing page
-    Given que estoy en la página de inicio
-    Then debería ver etiquetas por cada sección de la landing page.
-    
-  Scenario: Mostrar Ingresar y Registrar
-    Given que estoy en la parte superior de página del sitio web
-    Then debería ver los botones "Ingresar" y "Registrarse".
+  Scenario: Interacción con hipervínculos
+    Given que soy un visitante de la landing page
+    When selecciono una de las secciones
+    Then debería ser dirigido a la sección seleccionada.
