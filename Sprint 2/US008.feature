@@ -1,11 +1,20 @@
-Feature: Elección de comidas
-    Scenario: Dirigirse a la sección alimentos
-        Dado que soy un FitExplorer y estoy en mi cuenta
-        Cuando de click al icono de la manzana
-        Entonces se mostrará la interfaz de la sección de alimentos
+Feature: Navegar por la sección de Productos
+    Scenario: Dirigirse a la sección productos
+        Dado que el FitExplorer se encuentra en su cuenta de FitHub
+        Cuando de click a la sección de Productos
+        Entonces se mostrará la interfaz de la sección de Productos
 
-    Scenario: Seleccionar alimentos
-        Dado que soy un FitExplorer y veo los alimentos disponibles para mi objetivo
-        Cuando de click a un plato puedo ver sus ingredientes 
-        Y puedo ver una receta corta
-        Entonces con el botón elegir lo selecciono
+    Scenario: Visualizar productos de Cardio
+        Dado que el FitExplorer está en  la sección de Productos
+        Cuando seleccione "Cardio" del dropdown
+        Entonces se mostrarán tarjetas con los productos de Cardio, que incluyen el nombre del producto, el precio y dónde se puede encontrar.
+
+    Scenario: Visualizar productos de Alimentación
+        Dado que el FitExplorer está en la sección de Productos
+        Cuando seleccione "Alimentación" del dropdown
+        Entonces se mostrarán tarjetas con los productos de Alimentación, que incluyen el nombre del producto, el precio y dónde se puede encontrar.
+
+    Scenario: Visualizar productos Funcionales
+        Dado que el FitExplorer está en la sección de Productos
+        Cuando seleccione "Funcional" del dropdown
+        Entonces se mostrarán tarjetas con los productos funcionales, que incluyen el nombre del producto, el precio y dónde se puede encontrar.
